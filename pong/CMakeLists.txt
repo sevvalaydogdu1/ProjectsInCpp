@@ -14,6 +14,8 @@ add_executable(pong WIN32
     src/GameWindow.cpp
     src/renderer.h
     src/renderer.cpp
+    src/game.h
+    src/game.cpp
 )
 
 target_link_libraries(pong PRIVATE Qt6::Widgets)

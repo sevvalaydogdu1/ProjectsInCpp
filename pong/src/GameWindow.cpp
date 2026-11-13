@@ -1,6 +1,6 @@
 #include "GameWindow.h"
 
-#include "colors.h"
+#include "game.h"
 #include "renderer.h"
 
 #include <QPainter>
@@ -29,7 +29,7 @@ void GameWindow::resizeEvent(QResizeEvent*)
 void GameWindow::frame()
 {
     if (render_state.pixels)
-        clear_screen(kBorderColor);
+        simulate_game(deltaTime_);
 
     update();
 
